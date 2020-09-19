@@ -102,7 +102,7 @@ PlrName=input.value()
   pc.setVelocity(0,-6)
 
   if(GameState!==4){
-  if(frameCount%75===0){
+  if(frameCount%120===0){
 
     score=score+1
     obstacles.push(createSprite(pc.x,pc.y-500,50,50))
@@ -112,7 +112,7 @@ PlrName=input.value()
   }
 } 
 
-  if(frameCount%100===0){
+  if(frameCount%500===0){
 
     powers.push(createSprite(random(50,500),pc.y-500,50,50))
 
